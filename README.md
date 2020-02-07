@@ -10,5 +10,5 @@ Therefore, the codes stored in this repositories are related to these three main
 **2.	Rooftop Statistics Calculation**
 **3.  Rooftop Flatness Assessment**
 
-##1. Proximity Features Extraction
+## 1. Proximity Features Extraction
 
