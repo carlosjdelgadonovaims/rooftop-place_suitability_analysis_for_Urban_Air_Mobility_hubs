@@ -27,4 +27,8 @@ This stage of the research seeks to maximize the information provided by the urb
 -	Selection of all possible nodes within 2km by using **_Driving Distance_** algorithm for each of the **census blocks** in Manhattan.
 -	Selection of the shortest path to each **POI** type from each of the **census blocks** in Manhattan node when considering **_Driving Distance_** algorithm.
 
+<p align="center">
+ <img src="images\pgRouting_driving_distance_process.png">
+</p>
+
 6. Analysis of the obtained results.
