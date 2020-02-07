@@ -13,12 +13,17 @@ Therefore, the codes stored in this repositories are related to these three main
 ## 1. Proximity Features Extraction
 
 This stage of the research seeks to maximize the information provided by the urban ecosystem variables considered in the study (socio-economic and environmental) for each census block of Manhattan. To achieve this process was necessary to perform the following steps:
-1. Download a routable Manhattan road network. In this case, the road network was obtained from Open Street Maps through the Geofabrik repository. The network is characterized by having information about the source nodes, destination nodes, edges, and cost.
-2. Use osm2pgrouting library to upload the road network into a PostgreSQL database with PostGIS complement.
-3. Load all the Point-of-Interest data POI (shapefiles) into the Postgres database. In this case the POI selected fro the analysis were: Parks, Graveyards, Hospitals, Health Centers, Embassies, Government Facilities, Public Safety, Parking Lots, Malls, Subway Stations, Bus Stops, Schools and Universities. Most of the information was downloaded from Open Street Maps and NYC Open Data.
-4. Load the census blocks of Manhattan into the Postgres database.
-5. Develop and implement the [SQL code (pgRouting_driving_distance_calculation_census_block)](Code_Pgrouting_Driving_Distance_Calculation_Census_Blocks.sql) to make the feature extraction. The code essentially performs the following steps when using the pgRouting library for PosgreSQL:
--	Selection of closest node to each POI and each census block.
--	Selection of all possible nodes within 2km by using Driving Distance algorithm for each of the census blocks in Manhattan.
--	Selection of the shortest path to each POI type from each of the census blocks in Manhattan node when considering Driving Distance algorithm.
+1. Download a routable Manhattan road network. In this case, the road network was obtained from **_Open Street Maps_ (OSM)**  through the **_Geofabrik_** repository. The network is characterized by having information about the source nodes, destination nodes, edges, and cost.
+
+2. Use **_osm2pgrouting_** library to upload the road network into a **_PostgreSQL_** database with **_PostGIS_** complement.
+
+3. Load all the Point-of-Interest data **POI** (shapefiles) into the **_PostgreSQL_** database. In this case the **POI** selected fro the analysis were: Parks, Graveyards, Hospitals, Health Centers, Embassies, Government Facilities, Public Safety, Parking Lots, Malls, Subway Stations, Bus Stops, Schools and Universities. Most of the information was downloaded from **OSM** and **NYC Open Data**.
+
+4. Load the **census blocks** of Manhattan into the **_PostgreSQL_** database.
+
+5. Develop and implement the [SQL code (pgRouting_driving_distance_calculation_census_block)](Code_Pgrouting_Driving_Distance_Calculation_Census_Blocks.sql) to make the feature extraction. The code essentially performs the following steps when using the **_pgRouting_** library for **_PosgreSQL_**:
+-	Selection of closest node to each **POI** and each **census block**.
+-	Selection of all possible nodes within 2km by using **_Driving Distance_** algorithm for each of the **census blocks** in Manhattan.
+-	Selection of the shortest path to each **POI** type from each of the **census blocks** in Manhattan node when considering **_Driving Distance_** algorithm.
+
 6. Analysis of the obtained results.
