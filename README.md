@@ -54,6 +54,6 @@ The execution of the algorithm uses a **_parallel processing_** approach when us
 The results of the algorithm allow the generation of elevation statistics maps like the one shown below.
 
 <p align="center">
- <img src="images\statistics.PNG" width=400>
+ <img src="images\statistics.PNG" width=800>
 </p>
 
