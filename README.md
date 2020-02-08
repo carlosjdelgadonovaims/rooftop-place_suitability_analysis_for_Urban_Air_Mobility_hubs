@@ -35,5 +35,5 @@ This stage of the research seeks to maximize the information provided by the urb
 - Reachable nodes and edges at a maximum driving distance of 2km for each of the census blocks in Manhattan (3.787). The examples allows to observe the catchment area or coverage area given by the nodes and edges reached from a specific census block.
 
 <p align="center">
- <img src="images\driving_distance.jpg" width=300>
+ <img src="images\driving_distance.jpg" width=600>
 </p>
