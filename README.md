@@ -75,5 +75,5 @@ Besides, for each of the main surfaces, the algorithm calculates the elongation 
 The results of the algorithm then allow us to establish suitability indexes for each type of platform. The map below shows the spatial distribution of suitability levels for Vertistop (eVTOL small size platforms) platforms. It is also important to mention that for the execution of this algorithm also it is necessary to launch a **parallel processing** from the [Python code (Parallel_Porcessing_Launcher)](Parallel_Processing_Launcher.py).
 
 <p align="center">
- <img src="images\vertistops.PNG">
+ <img src="images\vertistops.PNG" width=500>
 </p>
