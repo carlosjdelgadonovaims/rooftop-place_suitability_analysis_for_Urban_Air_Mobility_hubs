@@ -37,3 +37,9 @@ This stage of the research seeks to maximize the information provided by the urb
 <p align="center">
  <img src="images\driving_distance.jpg" width=600>
 </p>
+
+- Reachable POIs obtained after using **_driving distance_** algorithm from a specific census block. The algorithm allows counting the total number of elements within each POI type and finding out the closest one for each POI type.
+
+<p align="center">
+ <img src="images\Reachable_POIs.PNG" width=700>
+</p>
