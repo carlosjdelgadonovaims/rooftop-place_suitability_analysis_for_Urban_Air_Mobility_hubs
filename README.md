@@ -32,13 +32,13 @@ This stage of the research seeks to maximize the information provided by the urb
 </p>
 
 6. Analysis of the obtained results.
-- Reachable nodes and edges at a maximum **_driving distance_** of 2km for each of the **census blocks** in Manhattan (3.787). The examples allows to observe the **catchment area** or coverage area given by the nodes and edges reached from a specific census block.
+- Reachable nodes and edges at a maximum **_Driving Distance_** of 2km for each of the **census blocks** in Manhattan (3.787). The examples allows to observe the **catchment area** or coverage area given by the nodes and edges reached from a specific census block.
 
 <p align="center">
  <img src="images\driving_distance.jpg" width=400>
 </p>
 
-- Reachable POIs obtained after using **_driving distance_** algorithm from a specific **census block**. The algorithm allows counting the total number of elements within each POI type and finding out the closest one for each POI type.
+- Reachable POIs obtained after using **_Driving Distance_** algorithm from a specific **census block**. The algorithm allows counting the total number of elements within each POI type and finding out the closest one for each POI type.
 
 <p align="center">
  <img src="images\Reachable_POIs.PNG" width=700>
