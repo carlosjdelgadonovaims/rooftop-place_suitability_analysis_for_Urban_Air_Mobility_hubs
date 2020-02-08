@@ -8,7 +8,7 @@ The study area selected for this research is Manhattan (New York, U.S), which is
 Therefore, the codes stored in this repositories are related to these three main research stages:
 1. [Proximity Features Extraction](#proximity)
 2. [Rooftop Statistics Calculation](#roof_statistics)
-3. Rooftop Flatness Assessment
+3. [Rooftop Flatness Assessment](#flatness)
 
 <a name="proximity"></a>
 ## 1. Proximity Features Extraction
@@ -57,3 +57,17 @@ The results of the algorithm allow the generation of elevation statistics maps l
  <img src="images\statistics.PNG" width=800>
 </p>
 
+<a name="flatness"></a>
+## 3. Rooftop Flatness Assessment
+
+Once the new LIDAR files (LAS format) are generated per each rooftop in Manhattan, the [Python code algorithm (Rooftop_Flatness_Elongation_Assessment)](Rooftop_Flatness_Elongation_Assessment.py) performs the flatness assessment of those rooftops. The code performs a routine where the LIDAR files are converted into a raster file (image) when considering a pixel size of 30 cm. Then the raster files are polygonized by aggregating neighboring pixels with the same elevation value to conform a single polygon (surface). The algorithm then takes the five largest surfaces and calculate the percentage they represent within the entire roof area. These areas are then classified according to the size necessary for the construction of different UAM platforms.
+
+<p align="center">
+ <img src="images\flatness_assessment.PNG">
+</p>
+
+Besides, for each of the main surfaces, the algorithm calculates the elongation factor by applying Length-Wight compactness formula. Thus, the algorithm can assess the ratio of compactness (0-1) where values close to 1 indicate higher compactness than values close to 0. This factor is then taked as a suitability index for the rooftops.
+
+<p align="center">
+ <img src="images\surfaces.PNG">
+</p>
